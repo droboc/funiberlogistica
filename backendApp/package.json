@@ -1,0 +1,31 @@
+{
+  "name": "backendapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node-dev --env-file .env src/main.ts",
+    "start": "node dist/src/main.js",
+    "build": "tsc",
+    "generate": "drizzle-kit generate:sqlite"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/cors": "^9.0.1",
+    "@libsql/client": "^0.5.6",
+    "@sinclair/typebox": "^0.32.20",
+    "drizzle-orm": "^0.30.4",
+    "env-schema": "^5.2.1",
+    "fastify": "^4.26.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "drizzle-kit": "^0.20.14",
+    "drizzle-zod": "^0.5.1",
+    "pino-pretty": "^11.0.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.4.3"
+  }
+}
